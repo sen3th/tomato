@@ -39,7 +39,7 @@ hr {
 
 .timer{
     font-size: 10em;
-    font-weight: bold;
+    font-weight: light;
 }
 
 .button-wrapper {
@@ -49,7 +49,7 @@ hr {
 
 button{
     font-size: 2em;
-    font-weight: bold;
+    font-weight:light;
     letter-spacing: 1px;
     padding: 0.2em 0.5em;
     border-radius: 0.5em;
