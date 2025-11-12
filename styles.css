@@ -56,10 +56,27 @@ button{
     border:none;
     cursor:pointer;
     transition: transform 0.2s ease-in-out;
+    position: relative;
 }
 
 button:hover{
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+}
+
+@keyframes buttonClick {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button.clicked {
+    animation: buttonClick 0.3s ease-in-out;
 }
 
 #start-button{

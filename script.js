@@ -46,6 +46,23 @@ const resetTimer = () => {
     updateTimer();
 };
 
-startButton.addEventListener('click', startTimer);
-stopButton.addEventListener('click', stopTimer);
-resetButton.addEventListener('click', resetTimer);
+startButton.addEventListener('click', () => {
+    animateButton(startButton);
+    startTimer();
+});
+stopButton.addEventListener('click', () => {
+    animateButton(stopButton);
+    stopTimer();
+});
+resetButton.addEventListener('click', () => {
+    animateButton(resetButton);
+    resetTimer();
+});
+
+const animateButton = (button) => {
+    button.classList.add('clicked');
+    // Remove the class after animation completes
+    setTimeout(() => {
+        button.classList.remove('clicked');
+    }, 300);
+};
