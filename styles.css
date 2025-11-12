@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e1;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: larger;
+}
+
+#pomodoro {
+    align-items: center;
+    width: 300px;
+    border: 2px solid #000000;
+    padding: 100px;
+    margin: 0 auto;
+}
+
+hr {
+    margin: 20px auto;
+    width: 80%;
+    border: none;
+}
