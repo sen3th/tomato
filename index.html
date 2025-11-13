@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="tile">pom🍅 timer</h1>
+        <h1 class="tile">pom🍅timer</h1>
         <hr>
         <p class="timer" id ="timer">25:00</p>
         <div class="button-wrapper">
@@ -22,8 +22,17 @@
             <button id="stop-button">stop</button>
             <button id="reset-button">reset</button>
         </div>
-    </div>
 
+    </div class="taskContainer">
+        <div class="taskContainer">
+            <h1 class="tile">tasks</h1>
+            <hr>
+            <div class="task-controls">
+                <input type="text" id="checkboxLabelUserInput" placeholder="enter task name">
+                <button id="addCheckboxButton">add to the list</button>
+            </div>
+            <div id="checkboxContainer"></div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
